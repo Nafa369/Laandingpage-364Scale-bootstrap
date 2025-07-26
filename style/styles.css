@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+.carousel-item{
+    height: 60vh;
+}
+.carousel-item img{
+    object-fit:cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.fade-in-on-scroll{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in-on-scroll.visible{
+    opacity: 1;
+    transform: translateY(0);
+}

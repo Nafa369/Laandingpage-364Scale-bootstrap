@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/styles.css">
     <title>364scale</title>
 </head>
 
@@ -11,7 +12,7 @@
     <!-- Navbar -->
      <nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top py-2">
         <div class="container">
-            <a href="#" class="navbar-brand">364Scale</a>
+            <a href="#" class="navbar-brand fw-bolder">364Scale</a>
             <!-- hamburger -->
              <button
              class="navbar-toggler"
@@ -19,25 +20,82 @@
              data-bs-toggle="collapse"
              data-bs-target="#navmenu"
              >
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon text"></span>
              </button>
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="" class="nav-link">About</a>
+                        <a href="" class="nav-link">Tentang</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Showcase</a>
+                        <a href="" class="nav-link">Koleksi</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Contact</a>
+                        <a href="" class="nav-link">Kontak</a>
                     </li>
                 </ul>
             </div>
         </div>
      </nav>
-
+     <!-- hero section -->
+      <section class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="class row align-items-center">
+                <!-- text -->
+                 <div class="col-md-6 mb-4 mb-md-0">
+                    <h1 class="fw-bold fs-1 text-white fade-in-on-scroll">Selamat datang di 364Scale</h1>
+                    <p class="lead fade-in-on-scroll">Jelajahi dan anda akan kembali ke masa kecil anda</p>
+                    <a href="#about" id="button" class="btn btn-warning btn-lg mt-3 rounded-4">Jelajahi</a>
+                 </div>
+            </div>
+        </div>
+      </section>
+      <!-- caroussel -->
+       <section class="bg-white p-3 row justify-content-center">
+        <div class="justtify-content-center">
+            <h4 class="text-dark fs-3 text-center pb-5 pt-3 fw-bolder">Highlight</h4>
+        </div>
+            <div id="carouselExampleCaptions" class="carousel slide w-75 shadow-lg p-3 mb-5">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active">
+                        <img src="img/community.jpg" class="d-block w-100" alt="community">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Komunitas</h5>
+                            <p>Bergabunglah bersama komunitas kami!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/collection.jpg" class="d-block w-100" alt="collection">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Koleksi Diecast</h5>
+                            <p>Koleksi diecast pribadi</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/event.jpg" class="d-block w-100" alt="event">
+                        <div class="carousel-caption d-none d-md-block bg-black bg-opacity-25">
+                            <h5>Event</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </section>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <script src="javascript/script.js"></script>
 </body>
 </html>
