@@ -30,3 +30,15 @@
     transform: scale(1.1);
     text-shadow: 0 0 5px #ffc107, 0 0 5px #ffc107;
 }
+#tombol-cepat a{
+    color: white;
+    text-decoration: none;
+}
+#tombol-cepat ul{
+    list-style: none;
+}
+
+#btn a:hover{
+    border: 1px solid #ffc107;
+    background-color: black;
+}
