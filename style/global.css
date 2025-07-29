@@ -2,6 +2,10 @@
 * {
     box-sizing: border-box;
 }
+/* smooth scroll */
+html{
+    scroll-behavior: smooth;
+}
 /* navbar */
 .nav-item {
     color: white;
@@ -16,8 +20,8 @@
 /* fade in */
 .fade-in-on-scroll {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateY(100px);
+    transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
 }
 .fade-in-on-scroll.visible {
     opacity: 1;

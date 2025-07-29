@@ -101,7 +101,9 @@
     box-shadow: 0 0 20px rgba(255, 193, 7, 0.5);
     transform: scale(1.05);
 }
-
+.parent > div:not(:hover){
+    filter: blur(2px);
+}
 .parent > div:hover::before {
     opacity: 1;
     transform: rotate(-45deg) translateY(100%);
