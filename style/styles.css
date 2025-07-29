@@ -1,30 +1,4 @@
-*{
-    box-sizing: border-box;
-}
-/* Animation / transisi */
-
-/* fade in */
-.fade-in-on-scroll{
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-.fade-in-on-scroll.visible{
-    opacity: 1;
-    transform: translateY(0);
-}
-/* navbar */
-.nav-item{
-    color: white;
-    padding: 8px 16px;
-    transition: all 0.3s ease;
-}
-/* nav hover */
-.nav-item a:hover{
-    color: #ffc107;
-    transform: scale(1.1);
-    text-shadow: 0 0 5px #ffc107, 0 0 5px #ffc107;
-}
+/* home */
 /* carousel */
 .carousel-item{
     height: 60vh;
@@ -101,15 +75,34 @@
     padding: 20px;
     color: white;
 }
-/* footer */
-#tombol-cepat a{
-    color: white;
-    text-decoration: none;
+.parent > div{
+    overflow: hidden;
+    transition: all 0.5s ease;
 }
-#tombol-cepat ul{
-    list-style: none;
+.parent > div::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        0deg,
+        transparent,
+        transparent 30%,
+        rgba(255, 193, 7, 0.3)
+    );
+    transform: rotate(-45deg);
+    transition: all 0.3s ease;
+    opacity: 0;
 }
-#tombol-cepat li{
-    padding-bottom: 0.9rem;
-    padding-top: 0;
+.parent > div:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.5);
+    transform: scale(1.05);
+}
+
+.parent > div:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
 }

@@ -6,7 +6,8 @@
     <!-- cdn bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/styles.css"> <!-- untuk halaman home/index -->
     <!-- cdn icon pack -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>364scale</title>
@@ -14,7 +15,7 @@
 
 <body>
     <!-- Navbar -->
-     <nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top py-2 z-3">
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top py-2 z-3">
         <div class="container">
             <a href="#" class="navbar-brand fw-bolder">364Scale</a>
             <!-- hamburger -->
@@ -50,24 +51,27 @@
             </div>
         </div>
      </nav>
-     <!-- hero section -->
-      <section class="bg-black bg-gradient text-white py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- text -->
-                 <div class="col-md-6 mb-4 mb-md-0">
-                    <h1 class="fw-bold fs-1 text-white fade-in-on-scroll">Selamat datang di 364Scale</h1>
-                    <p class="lead fade-in-on-scroll">Jelajahi dan anda akan kembali ke masa kecil anda</p>
-                    <a href="#about" id="button" class="btn btn-warning btn-lg mt-3 rounded-4">Jelajahi</a>
-                 </div>
+
+    <!-- Mulai halaman home -->
+    <div class="page-home">
+        <!-- hero section -->
+        <section class="bg-black bg-gradient text-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- text -->
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h1 class="fw-bold fs-1 text-white fade-in-on-scroll">Selamat datang di 364Scale</h1>
+                        <p class="lead fade-in-on-scroll">Jelajahi dan anda akan kembali ke masa kecil anda</p>
+                        <a href="#about" id="button" class="btn btn-warning btn-lg mt-3 rounded-4">Jelajahi</a>
+                    </div>
+                </div>
             </div>
-        </div>
-      </section>
-      <!-- caroussel -->
-       <section class="bg-white p-3 row justify-content-center">
-        <div class="justtify-content-center">
-            <h4 class="text-dark fs-3 text-center pb-5 pt-3 fw-bolder">Highlight</h4>
-        </div>
+        </section>
+        <!-- carousel -->
+        <section class="bg-white p-3 row justify-content-center">
+            <div class="justtify-content-center">
+                <h4 class="text-dark fs-3 text-center pb-5 pt-3 fw-bolder">Highlight</h4>
+            </div>
             <div id="carouselExampleCaptions" class="carousel slide w-75 shadow-lg p-3 mb-5">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -108,58 +112,63 @@
         </div>
         </section>
         <!-- Main Section -->
-         <div class="parent bg-dark p-5">
+        <div class="parent bg-dark p-5">
             <div class="box1" onclick="window.location.href='index.html'"></div>
             <div class="box2" onclick="window.location.href='index.html'"></div>
             <div class="box3" onclick="window.location.href='index.html'"></div>
             <div class="box4" onclick="window.location.href='index.html'"></div>
             <div class="box5" onclick="window.location.href='index.html'"></div>
-         </div>
-        <footer class="bg-dark text-white py-4">
-            <div class="container">
-                <div class="row">
-                    <!-- kolom logo dan nama web -->
-                    <div class="col-lg-3 mb-4">
-                        <div class="d-flex align-items-center">
-                            <img src="" alt="">
-                            <span class="fw-bold fs-3"><a href="#" class="text-decoration-none text-white">364Scale</a></span>
-                        </div>
+        </div>
+    </div>
+    <!-- Akhir halaman home -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- kolom logo dan nama web -->
+                <div class="col-lg-3 mb-4">
+                    <div class="d-flex align-items-center">
+                        <img src="" alt="">
+                        <span class="fw-bold fs-3"><a href="#" class="text-decoration-none text-white">364Scale</a></span>
                     </div>
-                    <!-- kolom tombol cepat -->
-                     <div class="col-md-3 mb-3">
-                        <div id="tombol-cepat">
-                            <ul>
-                                <li><a href="#">Tentang</a></li>
-                                <li><a href="#">Koleksi</a></li>
-                                <li><a href="#">Komunitas</a></li>
-                                <li><a href="#">Acara Diecast</a></li>
-                                <li><a href="#">Berita</a></li>
-                                <li><a href="#">Kontak</a></li>
-                            </ul>
-                        </div>
-                     </div>
-                    <!-- kolom kontak -->
-                    <div class="col-lg-3 col-md-4 mb-3">
-                        <h5 class="fw-medium">Hubungi Kami</h5>
-                        <div class="d-flex">
-                            <a href="mailto:imamulhunafa.kmj@gmail.com" target="_blank"><i class="bi bi-envelope me-3 text-white"></i></a>
-                            <a href="https://wa.me/089652401784" target="_blank"><i class="bi bi-whatsapp me-3 text-white"></i></a>
-                        </div>
+                </div>
+                <!-- kolom tombol cepat -->
+                 <div class="col-md-3 mb-3">
+                    <div id="tombol-cepat">
+                        <ul>
+                            <li><a href="#">Tentang</a></li>
+                            <li><a href="#">Koleksi</a></li>
+                            <li><a href="#">Komunitas</a></li>
+                            <li><a href="#">Acara Diecast</a></li>
+                            <li><a href="#">Berita</a></li>
+                            <li><a href="#">Kontak</a></li>
+                        </ul>
                     </div>
-                    <!-- kolom sosial media -->
-                    <div class="col-lg-3 col-md-4 mb-3">
-                        <h5 class="fw-medium">Sosial Media</h5>
-                        <div class="d-flex">
-                            <a href="https://www.facebook.com/immamul.hunafa" target="_blank" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-                            <a href="https://www.instagram.com/364scale/" target="_blank" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-                            <a href="https://github.com/Nafa369" target="_blank" class="text-white me-3"><i class="bi bi-github"></i></a>
-                        </div>
+                 </div>
+                <!-- kolom kontak -->
+                <div class="col-lg-3 col-md-4 mb-3">
+                    <h5 class="fw-medium">Hubungi Kami</h5>
+                    <div class="d-flex">
+                        <a href="mailto:imamulhunafa.kmj@gmail.com" target="_blank"><i class="bi bi-envelope me-3 text-white"></i></a>
+                        <a href="https://wa.me/089652401784" target="_blank"><i class="bi bi-whatsapp me-3 text-white"></i></a>
+                    </div>
+                </div>
+                <!-- kolom sosial media -->
+                <div class="col-lg-3 col-md-4 mb-3">
+                    <h5 class="fw-medium">Sosial Media</h5>
+                    <div class="d-flex">
+                        <a href="https://www.facebook.com/immamul.hunafa" target="_blank" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/364scale/" target="_blank" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="https://github.com/Nafa369" target="_blank" class="text-white me-3"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- cdn js bootstrap -->
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        </div>
+    </footer>
+
+    <!-- cdn js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
     <script src="javascript/script.js"></script>
 </body>
