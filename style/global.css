@@ -20,8 +20,8 @@ html{
 /* fade in */
 .fade-in-on-scroll {
     opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
+    transform: translateY(10px);
+    transition: opacity 0.5s ease-in-out;
 }
 .fade-in-on-scroll.visible {
     opacity: 1;

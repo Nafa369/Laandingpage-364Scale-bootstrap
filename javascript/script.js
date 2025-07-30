@@ -1,4 +1,4 @@
-const faders = document.querySelectorAll(".fade-in-on-scroll");
+const faders = document.querySelectorAll(".fade-in-on-scroll, .fade-in-scroll-x");
 let lastScrollTop = window.scrollY;
 
 function handlescroll(){
@@ -8,7 +8,7 @@ function handlescroll(){
         const rect = el.getBoundingClientRect();
         // memunculkan elemen ketika 20% masuk viewport
         // hilangkan ketika keluar dari vieqwport
-    const isVisible = (rect.top < window.innerHeight * 0.8) && (rect.bottom > window.innerHeight * 0.2) ;
+    const isVisible = (rect.top < window.innerHeight * 0.8) && (rect.bottom > window.innerHeight * 0.25) ;
 
         if (isVisible) {
             el.classList.add('visible');
@@ -33,7 +33,7 @@ function throtle(func, limit){
             lastFunc = setTimeout(function() {
                 if ((Date.now() - lastRan) >= limit) {
                     func.apply(context, args);
-                    lastRAn = Date.now();
+                    lastRan = Date.now();
                 }
             }, limit - (Date.now() - lastRan));
         }
