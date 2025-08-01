@@ -112,14 +112,18 @@
 #tentang{
     height: 400px;
 }
-#koelksi{
-    height: 500px;
+#koleksi{
+    height: 800px;
 }
 .parent2{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 1fr);
     gap: 8px;
+    height: 1000px;
+}
+.parent2 > div{
+    border-radius: 10px;
 }
 .div1 {
     grid-row: span 2 / span 2;
