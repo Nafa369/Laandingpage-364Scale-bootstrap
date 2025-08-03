@@ -27,6 +27,15 @@ html{
     opacity: 1;
     transform: translateY(0);
 }
+/* Fade in on scroll vertikal */
+.fade-in-on-scroll-x{
+    opacity: 0;
+    transform: translateX(10px);
+    transition: opacity 0.5s ease-in-out;
+}
+.fade-in-on-scroll-x.visible{
+    opacity: 1;
+    transform: translateX(0);}
 /* footer */
 #tombol-cepat a {
     color: white;
