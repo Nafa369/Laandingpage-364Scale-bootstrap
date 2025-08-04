@@ -120,147 +120,193 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 1fr);
     gap: 8px;
-    height: 1000px;
+    height: auto;
 }
 .parent2 > div{
-    border-radius: 10px;
+    position: relative;
+    width: 270px;
+    border-radius: 10px
 }
 .div1 {
     grid-row: span 2 / span 2;
+    background-image: url('../img/s15-pink.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 4/3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .div2 {
     grid-row: span 2 / span 2;
     grid-column-start: 2;
     grid-row-start: 2;
+    background-image: url('../img/rwb-cocacola.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 4/3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .div3 {
     grid-row: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 1;
+    background-image: url('../img/bmw-sw.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .div4 {
     grid-row: span 2 / span 2;
     grid-column-start: 4;
     grid-row-start: 2;
-}
-
-.div5 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 5;
-    grid-row-start: 1;
-}
-
-.div6 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 6;
-    grid-row-start: 2;
+    background-image: url('../img/s15-monalisa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 4/3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .div7 {
     grid-row: span 2 / span 2;
     grid-row-start: 3;
+    background-image: url('../img/collection.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 4/3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .div8 {
     grid-row: span 2 / span 2;
     grid-column-start: 2;
     grid-row-start: 4;
+    background-image: url('../img/s15-kuma.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 4/3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .div9 {
     grid-row: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 3;
+    background-image: url('../img/lexus-lfa.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .div10 {
     grid-row: span 2 / span 2;
     grid-column-start: 4;
     grid-row-start: 4;
-}
-
-.div11 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 5;
-    grid-row-start: 3;
-}
-
-.div12 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 6;
-    grid-row-start: 4;
+    background-image: url('../img/rwb-hoonigan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 4/3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .div13 {
     grid-row: span 2 / span 2;
     grid-row-start: 5;
+    background-image: url('../img/s15-garuda.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 4/3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .div14 {
     grid-row: span 2 / span 2;
     grid-column-start: 2;
     grid-row-start: 6;
+    background-image: url('../img/karimun.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 4/3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .div15 {
     grid-row: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 5;
+    background-image: url('../img/lambo-countach.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .div16 {
     grid-row: span 2 / span 2;
     grid-column-start: 4;
     grid-row-start: 6;
-}
-
-.div17 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 5;
-    grid-row-start: 5;
-}
-
-.div18 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 6;
-    grid-row-start: 6;
+    background-image: url('../img/bmw-m3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 4/3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .div19 {
     grid-row: span 2 / span 2;
     grid-row-start: 7;
+    background-image: url('../img/rx7-hec.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 4/3;;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .div20 {
     grid-row: span 2 / span 2;
     grid-column-start: 2;
     grid-row-start: 8;
+    background-image: url('../img/lambo-GT3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 4/3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .div21 {
     grid-row: span 2 / span 2;
     grid-column-start: 3;
     grid-row-start: 7;
+    background-image: url('../img/S15-formula-drift.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 4/3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .div22 {
     grid-row: span 2 / span 2;
     grid-column-start: 4;
     grid-row-start: 8;
+    background-image: url('../img/fortuner-hilux.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 4/3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.div23 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 5;
-    grid-row-start: 7;
-}
-
-.div24 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 6;
-    grid-row-start: 8;
-}
-        

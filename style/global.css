@@ -17,6 +17,9 @@ html{
     transform: scale(1.1);
     text-shadow: 0 0 5px #ffc107, 0 0 5px #ffc107;
 }
+#navbar-brand-logo img{
+    width: 10px;
+}
 /* fade in */
 .fade-in-on-scroll {
     opacity: 0;
