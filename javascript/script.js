@@ -22,7 +22,7 @@ function handlescroll(){
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 }; //function handscroll
 
-// Throtle function untuk optimal performance agar fungsi tidak terlalu sering di panggi dan memberatkan performa
+// Throtle function untuk optimal performance agar fungsi tidak terlalu sering di panggil dan memberatkan performa
 function throtle(func, limit){
     let lastFunc;
     let lastRan;
