@@ -4,6 +4,7 @@ Sebuah **landing page responsif** untuk situs pribadi **364Scale**, dibangun den
 
 ---
 
+
 ## 📌 Tentang Project
 - Landing page statis yang dirancang menggunakan framework **Bootstrap** agar responsif di berbagai perangkat (desktop, tablet, dan mobile).
 - Menambahkan interaktivitas ringan menggunakan **JavaScript**, seperti animasi scroll, efek hover, atau slider.
