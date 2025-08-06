@@ -2,40 +2,49 @@
 * {
     box-sizing: border-box;
 }
+
 /* smooth scroll */
 html{
     scroll-behavior: smooth;
 }
+
 /* navbar */
 .nav-item {
     color: white;
     padding: 8px 16px;
     transition: all 0.3s ease;
 }
+
 .nav-item a:hover {
     color: #ffc107;
     transform: scale(1.1);
     text-shadow: 0 0 5px #ffc107, 0 0 5px #ffc107;
 }
+
 /* fade in */
 .fade-in-on-scroll {
     opacity: 0;
     transform: translateY(10px);
     transition: opacity 0.5s ease-in-out;
 }
+
 .fade-in-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
 }
+
 /* Fade in on scroll vertikal */
 .fade-in-on-scroll-x{
     opacity: 0;
-    transform: translateX(10px);
-    transition: opacity 0.5s ease-in-out;
+    transform: translateX(20px);
+    transition: opacity 0.6s ease-in-out;
 }
+
 .fade-in-on-scroll-x.visible{
     opacity: 1;
-    transform: translateX(0);}
+    transform: translateX(0);
+}
+
 /* footer */
 #tombol-cepat a {
     color: white;

@@ -109,6 +109,8 @@
     opacity: 1;
     transform: rotate(-45deg) translateY(100%);
 }
+
+/* Koleksi Section */
 #tentang{
     height: 400px;
 }
@@ -310,6 +312,8 @@
     aspect-ratio: 4/3;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* Komunitas Section */
 .kiri{
     display: flex;
     flex-direction: row;
@@ -317,7 +321,10 @@
     align-items: center;
     gap: 30px;
     border-radius: 10px;
-    background-color: rgba(141, 141, 141, 0.3);
+    background-color: rgba(141, 141, 141, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+    background:  rgba(141, 141, 141, 0.3);
 }
 .kanan{
     display: flex;
@@ -326,9 +333,8 @@
     align-items: center;
     gap: 30px;
     border-radius: 10px;
-    background-color: rgba(141, 141, 141, 0.3);
-}
-.kanan{
+    background-color: rgba(141, 141, 141, 0.1);
+    backdrop-filter: blur(10px);
     transition: all 0.3s ease, box-shadow 0.3s ease;
     background:  rgba(141, 141, 141, 0.3);
 }
@@ -336,11 +342,29 @@
     transform: perspective(200px) rotateX(3deg);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
-.kiri{
-    transition: all 0.3s ease, box-shadow 0.3s ease;
-    background:  rgba(141, 141, 141, 0.3);
-}
+
 .kiri:hover{
     transform: perspective(200px) rotateX(3deg);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
+
+/* News Section */
+.news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 44px;
+}
+    
+.news-1 {
+    grid-row: span 4 / span 4;
+}
+
+.news-2 {
+    grid-row: span 4 / span 4;
+}
+
+.news-3 {
+    grid-row: span 4 / span 4;
+}
+        

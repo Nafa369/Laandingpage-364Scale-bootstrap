@@ -1,5 +1,5 @@
 // mengambil semua elemen yang punya class fade in on scroll dan fade in scrol x
-const faders = document.querySelectorAll(".fade-in-on-scroll, .fade-in-scroll-x");
+const faders = document.querySelectorAll(".fade-in-on-scroll, .fade-in-on-scroll-x");
 // menyimpan posisi scroll
 let lastScrollTop = window.scrollY;
 // untuk cek elemen mana yang sedang terlihat di viewport
