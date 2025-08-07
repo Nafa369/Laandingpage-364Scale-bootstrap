@@ -48,3 +48,40 @@ function throtle(func, limit){
 // event listener throtle
 window.addEventListener('scroll', throtle(handlescroll, 100));
 window.addEventListener('load', handlescroll);
+
+
+// GREETINGS HERO SECTION
+function updateGreeting(){
+
+    // ambil element html tempat menampilkan greeting
+    const greetingElement = document.getElementById('greeting');
+
+    // ambil jam saat ini
+    const now = new Date();
+    const hour = now.getHours();
+    const minutes = now.getMinutes()
+
+    // Tentukan greeting berdasarkan jam
+    let greeting = "";
+
+    if (hour === 0 && minutes === 0) {
+        greeting = "Selamat malam" ;
+    } else if ((hour === 0 && minutes >= 1) || (hour > 0 && hour < 12)) {
+        greeting = "Selamat pagi" ;
+    } else if (hour >= 12 && hour < 15) {
+        greeting = "Selamat siang" ;
+    } else if (hour >= 15 && hour < 18) {
+        greeting = "Selamat sore" ;
+    } else {
+        greeting = "Selamat malam" ;
+    }
+
+    // Tampilkan greeting di halaman
+    greetingElement.textContent = `${greeting}, `;
+}
+
+// jalankan pertamakali
+updateGreeting();
+
+//update setiap menit (jaga jaga jika user buka web)
+setInterval(updateGreeting, 60000);

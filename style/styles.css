@@ -349,22 +349,22 @@
 }
 
 /* News Section */
-.news {
+.event {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 44px;
 }
     
-.news-1 {
+.event-1 {
     grid-row: span 4 / span 4;
 }
 
-.news-2 {
+.event-2 {
     grid-row: span 4 / span 4;
 }
 
-.news-3 {
+.event-3 {
     grid-row: span 4 / span 4;
 }
         
