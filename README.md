@@ -16,7 +16,7 @@ Sebuah **landing page responsif** untuk situs pribadi **364Scale**, dibangun den
 ---
 
 ## ✨ Fitur Utama
-- Layout satu halaman dengan hero section, fitur, dan footer.
+- Layout satu halaman dengan rencana multi halaman di beberapa bagian..
 - Navigasi responsif menggunakan komponen **navbar** Bootstrap.
 - Tata letak grid responsif (Bootstrap grid system).
 - Animasi scroll dan interaksi sederhana menggunakan **JavaScript**.
